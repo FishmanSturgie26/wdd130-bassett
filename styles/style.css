@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+    
+    #budgetlogo {
+        width: 95px;
+        height: 95px;
+        display: inline-block;
+    }
+
+    .image-container {
+        width: 1222px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 3px;
+        border-style: solid;
+        border-color: #3A7CA5;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    nav {
+        background-color: #2F5233;
+        border-radius: 3px;
+        border-style: solid;
+        border-color: #3A7CA5 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-right: 20px;
+    margin: 0;
+    }
+
+    body {
+        background-color: #F5F5F5;
+    }
+
+    h1 {
+        color: black;
+        font-size: 30px;
+        font-family: 'montserrat';
+    }
