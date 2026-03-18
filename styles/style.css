@@ -1,8 +1,12 @@
-@font-face {
-    font-family: 'montserrat';
-    src: url(Montserrat-VariableFont_wght.ttf);
-}
-    
+    @font-face {
+        font-family: mont; /* set name */
+        src: url("../Montserrat-VariableFont_wght.ttf"); /* url of the font */
+    }
+
+    @font-face {
+        font-family: open;
+        src: url(../OpenSans-VariableFont_wdth\,wght.ttf);
+    }
     #budgetlogo {
         width: 95px;
         height: 95px;
@@ -49,5 +53,9 @@
     h1 {
         color: black;
         font-size: 30px;
-        font-family: 'montserrat';
+        font-family: 'mont';
+    }
+
+    body {
+        font-family:"open";
     }
