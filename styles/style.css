@@ -14,8 +14,8 @@
     }
 
     .image-container {
-        width: 1222px;
-        height: 300px;
+        width: 1205px;
+        height: 250px;
         overflow: hidden;
         border-radius: 3px;
         border-style: solid;
@@ -26,6 +26,22 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .image-container1 {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-right: 20px;
+    }
+
+    .image-container1 img {
+        width: 400px;
+        height: auto;
+        flex-shrink: 0;
+        object-fit: cover;
+        border-style: solid;
+        border-color: #3A7CA5;
     }
 
     nav {
@@ -48,6 +64,8 @@
 
     body {
         background-color: #F5F5F5;
+        font-family:"open"
+        
     }
 
     h1 {
@@ -56,6 +74,9 @@
         font-family: 'mont';
     }
 
-    body {
-        font-family:"open";
+    .image-container1 p {
+        display: flex;
+        flex: 1;
+        max-width: none;
+        margin-top: 90px;
     }
