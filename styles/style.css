@@ -1,11 +1,15 @@
 /* fonts */
 @font-face {
-    font-family: mont; /* set name */
+    font-family: "mont"; /* set name */
+    font-weight: 500;
     src: url("../Montserrat-VariableFont_wght.ttf"); /* url of the font */
 }
 @font-face {
     font-family: open;
     src: url(../OpenSans-VariableFont_wdth\,wght.ttf);
+    /* src: url('times-new-roman.woff2') format('woff2'),
+         url('times-new-roman.woff') format('woff'); */
+
 }
 
 /* general stuff */
@@ -33,11 +37,25 @@ h1 {
     font-size: 30px;
     font-family: 'mont';
 }
+h2 {
+    font-family: 'mont';
+}
+h3 {
+    font-family: 'mont';
+}
 h4 {
     margin-left: 10px;
+    font-family: 'mont';
 }
 h5 {
     margin-bottom: 10px;
+    font-family: 'mont';
+}
+h6 {
+    font-family: 'mont';
+}
+img { /* when working on html, to keep images in check */
+    width: 500px;
 }
 
 /* nav */
@@ -176,10 +194,12 @@ nav a:hover{
     color: var(--off-white);
     z-index: 1;
     text-shadow: var(--forest-green) 0 0 5px;
+    font-family: 'mont';
 }
 .guide-title{
     padding: 25px 10px;
     font-size: 2em;
+    font-family: 'mont';
 }
 hr {
     background-color: var(--sky-blue);
@@ -220,6 +240,7 @@ hr {
     margin: 0;
     margin-bottom: 5px;
     font-size: 1.2em;
+    font-family: 'mont';
 }
 .odd p {
     margin: 0;
@@ -252,6 +273,7 @@ hr {
     margin: 0;
     margin-bottom: 5px;
     font-size: 1.2em;
+    font-family: 'mont';
 }
 .even p {
     margin: 0;
