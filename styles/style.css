@@ -68,7 +68,7 @@ nav {
     padding: 5px;
     border-bottom: var(--sand) 3px solid;
     /* border-radius: 3px; */
-    background-color: #2F5233;
+    background-color: var(--forest-green);
 /*Miscellaneous*/
     overflow: hidden;
 }
@@ -144,10 +144,10 @@ nav a:hover{
     max-width: 400px;
     height: 200px;
     padding: 20px;
-    margin-top: 75px;
-    border-style: solid;
-    border-color: var(--sky-blue);
-    border-radius: 3px;
+    margin-top: 50px;
+    border: solid var(--sky-blue) 3px;
+    border-radius: 25px;
+    text-align: center;
 }
 .travel img {
     width: 100px;
@@ -158,16 +158,23 @@ nav a:hover{
     max-width: 400px;
     height: 200px;
     padding: 20px;
-    margin-top: 75px;
-    border-style: solid;
-    border-color: var(--sky-blue);
-    border-radius: 3px;
+    margin-top: 50px;
+    border: solid var(--sky-blue) 3px;
+    border-radius: 25px;
+    text-align: center;
 }
 .gear img {
     width: 90px;
-    height: auto;
-    padding-top: 10px;
-    padding-left: 5px;
+    padding: 10px;
+    /* padding-left: 5px; */
+}
+.card-container a {
+    text-decoration: none;
+    color: var(--forest-green);
+}
+.card-container a:hover {
+    text-decoration: underline;
+    color: var(--sky-blue);
 }
 
 /* guide hero */
@@ -292,7 +299,6 @@ footer {
     background-color: var(--sand);
     color: var(--sky-blue);
 }
-
 footer ul {
     display: flex;
     margin: 0;
@@ -308,108 +314,85 @@ footer a:hover{
     text-decoration: underline;
 }
 
-
 /* -----gear------ */
+/* gear basic stuff */
 .gear-main {
     margin-inline: auto;
     margin: 25px;
 }
-
-.gear-intro {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.gear-intro .image-box {
-    flex: 1;
-}
-
-.gear-intro .text-box {
-    flex: 2; 
-}
-
-.gear-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 30px;
-    margin: 30px 0;
-}
-
-.gear-item {
-    display: flex;
-    align-items: stretch;
-    gap: 15px;
-}
-
-.gear-item .image-box {
-    flex: 1;
-    display: flex;
-}
-
-.gear-item .text-box {
-    flex: 1.5;
-}
-
-.gear-intro .text-box .text {
-    margin: 3% auto;
-}
-
 .gear-main img {
     width: 100%;
     height: auto;
     display: block;
     background-color: var(--off-white); 
 }
-
 .gear-main h2 {
     font-family: 'mont';
     color: var(--dark-gray);
     font-size: 1.7rem;
     margin-top: 0;
 }
-
 .gear-main h3 {
     font-family: 'mont';
     color: var(--sky-blue);
     font-size: 1.1rem;
     margin: 5px 0;
 }
-
 .gear-main p {
     font-family: 'open';
     line-height: 1.6;
     color: var(--dark-gray);
 }
-
+/* list */
 .gear-main ul li {
     margin-bottom: 12px; 
     line-height: 1.4;    
 }
-
+.gear-main ul li b {
+    font-family: 'mont'; 
+    font-weight: 700;      
+    margin-right: 5px;   
+}
+/* text-box */
 .gear-main .text-box ul {
     list-style-position: inside; 
     display: inline-block;  
 }
-
 .gear-main .text-box p {
     max-width: 80%;         
     margin: 15px auto;    
     padding: 0;
     text-align: left; 
 }
-
 .gear-main .text-box ul {
     margin: 15px auto;      
     padding: 0;
     text-align: left;
 }
 
-.gear-main ul li b {
-    font-family: 'mont'; 
-    font-weight: 700;      
-    margin-right: 5px;   
+/* gear intro */
+.gear-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 30px;
+}
+.gear-intro .image-box {
+    flex: 1;
+}
+.gear-intro .text-box {
+    flex: 2; 
+}
+.gear-intro .text-box .text {
+    margin: 3% auto;
+}
+
+/*  gear organization */
+.gear-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    margin: 30px 0;
 }
 .gear-hr2 {
     border: none;
@@ -419,7 +402,6 @@ footer a:hover{
     height: 3px;
     border-radius: 2px;
 }
-
 .gear-hr1 {
     border: none;
     margin-right: 0;
@@ -427,6 +409,20 @@ footer a:hover{
     background-color: var(--sky-blue);
     height: 3px;
     border-radius: 2px;
+}
+
+/* gear item */
+.gear-item {
+    display: flex;
+    align-items: stretch;
+    gap: 15px;
+}
+.gear-item .image-box {
+    flex: 1;
+    display: flex;
+}
+.gear-item .text-box {
+    flex: 1.5;
 }
 
 @media (max-width: 768px) {
