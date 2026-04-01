@@ -292,6 +292,7 @@ footer {
     background-color: var(--sand);
     color: var(--sky-blue);
 }
+
 footer ul {
     display: flex;
     margin: 0;
@@ -305,4 +306,149 @@ footer a {
 }
 footer a:hover{
     text-decoration: underline;
+}
+
+
+/* -----gear------ */
+.gear-main {
+    margin-inline: auto;
+    margin: 10px;
+}
+
+.gear-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gear-intro .image-box {
+    flex: 1;
+}
+
+.gear-intro .text-box {
+    flex: 2; 
+}
+
+.gear-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.gear-item {
+    display: flex;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.gear-item .image-box {
+    flex: 1;
+    display: flex;
+}
+
+.gear-item .text-box {
+    flex: 1.5;
+}
+
+.gear-intro .text-box .text {
+    margin: 50px auto;
+}
+
+.gear-main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #e0e0e0; 
+}
+
+.gear-main h2 {
+    font-family: 'mont';
+    color: var(--forest-green);
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.gear-main h3 {
+    font-family: 'mont';
+    color: var(--sky-blue);
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.gear-main p {
+    font-family: 'open';
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+.gear-main ul li {
+    margin-bottom: 12px; 
+    line-height: 1.4;    
+}
+
+.gear-main .text-box ul {
+    list-style-position: inside; 
+    display: inline-block;  
+}
+
+.gear-main .text-box p {
+    max-width: 80%;         
+    margin: 15px auto;    
+    padding: 0;
+    text-align: left; 
+}
+
+.gear-main .text-box ul {
+    margin: 15px auto;      
+    padding: 0;
+    text-align: left;
+}
+.gear-hr2 {
+    border: none;
+    margin: 30px 0;
+    width: 100%;
+    background-color: var(--sky-blue);
+    height: 3px;
+    border-radius: 2px;
+}
+
+.gear-hr1 {
+    border: none;
+    margin-right: 0;
+    width: 66%;
+    background-color: var(--sky-blue);
+    height: 3px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .gear-grid {
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+    }
+
+    .gear-item {
+        flex-direction: column; 
+    }
+
+    .gear-intro {
+        flex-direction: column;
+    }
+
+    .gear-hr1 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gear-intro .image-box {
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+    .gear-item .image-box {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    }
 }
